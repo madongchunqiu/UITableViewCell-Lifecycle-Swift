@@ -23,6 +23,11 @@ I though I shall make this happen to *UITableViewCell*.
 
 # Objective-C version
 [UITableViewCell-Lifecycle](https://github.com/madongchunqiu/UITableViewCell-Lifecycle)
+```
+The difference between Objective-C version and Swift version is:   
+the Objective-C version swizzle method `tableView:willDisplayCell:forRowAtIndexPath:` in all the subclass of `MDTableViewDelegate`, not `MDTableViewDelegate` itself.
+By doing this, there is not need to call `super.tableView(tableView, willDisplayCell: cell, forRowAtIndexPath: indexPath)`, and all the hacking details are hidden.
+```
 
 # Known Issues
 These events won't be triggerred if the whole tableView is going on-screen or off-screen, e.g. when pushing another view controller or poped back. (Currently I don't see the need to fix this.)  
