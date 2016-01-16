@@ -1,12 +1,12 @@
 # Description
-The `UITableViewCellLifecycleExtension` extension (with `MDTableViewDelegate`) provide lifecycle events for *UITableViewCell*, just like UIViewController:
+The UITableViewCell's swift extension of `UITableViewCellLifecycleExtension` (with `MDTableViewDelegate`) provide lifecycle events for *UITableViewCell*, just like UIViewController:
 * cellWillAppear
 * cellDidAppear
 * cellDidLayoutSubviews
 * cellDidDisappear
 
 
-![Debug log](https://github.com/madongchunqiu/UITableView-Lifecycle-Swift/blob/master/UITableView-Lifecycle-Swift.gif)  
+![Debug log](https://github.com/madongchunqiu/UITableViewCell-Lifecycle-Swift/blob/master/UITableView-Lifecycle-Swift.gif)  
 
 
 # Why
