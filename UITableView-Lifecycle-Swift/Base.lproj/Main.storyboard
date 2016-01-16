@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Sample LighterVC-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SampleLighterVC" customModule="UITableView_Lifecycle_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Eeo-7L-RNe">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SampleCell" rowHeight="168" id="E2p-xU-Pif" customClass="SampleCell" customModule="UITableView_Lifecycle_Swift" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="168"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E2p-xU-Pif" id="CDM-ws-7YA">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="167"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g8c-iQ-ou4">
+                                                    <rect key="frame" x="250" y="34" width="100" height="100"/>
+                                                    <color key="backgroundColor" red="1" green="0.40392160420000001" blue="0.0039215688589999999" alpha="1" colorSpace="deviceRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="g8c-iQ-ou4" secondAttribute="height" multiplier="1:1" id="fA8-4T-Bnz"/>
+                                                        <constraint firstAttribute="width" constant="100" id="q8z-SR-GhZ"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="g8c-iQ-ou4" firstAttribute="centerX" secondItem="CDM-ws-7YA" secondAttribute="centerX" id="9hT-Ug-V0R"/>
+                                                <constraint firstItem="g8c-iQ-ou4" firstAttribute="centerY" secondItem="CDM-ws-7YA" secondAttribute="centerY" id="G3P-Zh-UKy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="viewInCenter" destination="g8c-iQ-ou4" id="LC1-FT-dv5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Eeo-7L-RNe" secondAttribute="bottom" id="jBU-E2-e62"/>
+                            <constraint firstAttribute="trailing" secondItem="Eeo-7L-RNe" secondAttribute="trailing" id="mVr-yV-f1Z"/>
+                            <constraint firstItem="Eeo-7L-RNe" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="p88-tW-mlx"/>
+                            <constraint firstItem="Eeo-7L-RNe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sL9-Y7-xhE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Eeo-7L-RNe" id="ANe-t5-1zV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="175" y="321"/>
+        </scene>
+    </scenes>
+</document>
