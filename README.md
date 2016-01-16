@@ -27,3 +27,6 @@ I though I shall make this happen to *UITableViewCell*.
 # Known Issues
 These events won't be triggerred if the whole tableView is going on-screen or off-screen, e.g. when pushing another view controller or poped back. (Currently I don't see the need to fix this.)  
 It only happens when the *UITableViewCell* is scrolling into the screen or scrolling out-side of the screen.
+
+# 中文说明
+[给TableViewCell加上生命周期事件（如cellWillAppear）(下)](http://www.jianshu.com/p/64c76a587450)
